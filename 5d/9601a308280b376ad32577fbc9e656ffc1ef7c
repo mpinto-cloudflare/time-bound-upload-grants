@@ -1,0 +1,27 @@
+.gitignore
+  s_8f224fcff4d9f5::t_ab7adf295ebeac 1-12
+README.md
+  s_8f224fcff4d9f5::t_486424593821e4 1-76
+src/form.ts
+  s_8f224fcff4d9f5::t_4f51b9a12960a0 1-31
+src/index.ts
+  s_8f224fcff4d9f5::t_da4ccb5f97c508 1-349
+wrangler.jsonc
+  s_8f224fcff4d9f5::t_79254c7975aa8a 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "5d9601a308280b376ad32577fbc9e656ffc1ef7c",
+  "prompts": {},
+  "sessions": {
+    "s_8f224fcff4d9f5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ee5416f4dffeJzaR5rTLVWm8a7",
+        "model": "cloudflare/auto"
+      },
+      "human_author": "Miguel Pinto <mpinto@cloudflare.com>"
+    }
+  }
+}
