@@ -1,0 +1,33 @@
+{
+  "name": "time-bound-upload-grants",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-08",
+  "triggers": {
+    "crons": ["*/2 * * * *"]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "LEDGER",
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "GRANT",
+        "class_name": "GrantWindow"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["GrantWindow"]
+    }
+  ],
+  "vars": {
+    "CF_ACCOUNT_ID": "REPLACE_WITH_CLOUDFLARE_ACCOUNT_ID",
+    "ISOLATE_RULE_PRECEDENCE": "REPLACE_WITH_ISOLATE_POLICY_PRECEDENCE",
+    "APPROVER_EMAILS": "approver@example.com"
+  }
+}
